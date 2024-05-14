@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Web Shop</h1>
+    <div class="header-container">
+        <div class="cart-container">
+            <button class="cart-button">Cart <span class="cart-badge">0</span></button>
+        </div>
+        <div id="wrap">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search items...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="items-grid">
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cart</h2>
+            <ul class="cart-items"></ul>
+            <p>Total: <span class="cart-total">$0.00</span></p>
+            <button class="buy-btn">Buy</button>
+        </div>
+    </div>
+
+    <!-- Modal za prikaz poruke kupovine -->
+    <div class="modal" id="buyModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Kupovina</h2>
+            <p id="buyMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
